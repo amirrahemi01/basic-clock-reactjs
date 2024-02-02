@@ -8,6 +8,7 @@ import { resetLogs } from './services/redux/actions/logAction';
 import { bindActionCreators } from 'redux';
 import { connect } from "react-redux";
 import { ReduxStoreState } from './services/types';
+import LogTable from './components/LogTable';
 
 type StoreProps = {
   currentTime: number
@@ -56,6 +57,7 @@ const App = (props: Props) => {
             handleStop={stopTimer}
             handleReset={resetTheTimer}
         />
+        <LogTable />
       </div>
     </div>
   );
