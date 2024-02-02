@@ -41,7 +41,7 @@ const Action = (props: Props) => {
     <div className="action-btns">
       {timerState === false ? (
         <button
-          className="action-start"
+          className="bg-green-600"
           onClick={() => {
             updateTimerState(true);
             handleStart();
@@ -52,7 +52,7 @@ const Action = (props: Props) => {
         </button>
       ) : (
         <button
-          className="action-stop"
+          className="bg-red-600"
           onClick={() => {
             updateTimerState(false);
             handleStop();

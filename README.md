@@ -1,49 +1,109 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# BASIC CLOCK APP
 
-In the project directory, you can run:
+![last commit](https://img.shields.io/github/last-commit/amirrahemi01/basic-clock-reactjs) ![license](https://img.shields.io/github/license/amirrahemi01/basic-clock-reactjs) ![Deploy](https://img.shields.io/github/deployments/amirrahemi01/basic-clock-reactjs/github-pages) 
 
-### `npm start`
+Welcome to the Clock App repository!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3 align="left">Technologies:</h3>
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer" style="text-decoration: none !important;"></a>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
+  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer" style="text-decoration: none !important;">
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
+     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
+      <a href="https://reactjs.org/" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
+       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
+       <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
+       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>
+       <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
+       <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="typescript" width="40" height="40"/> </a>
+       <a href="https://redux.js.org/" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
+       <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/redux/redux-original.svg" alt="typescript" width="40" height="40"/> </a>
+        </p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Overview
 
-### `npm test`
+This repository contains the source code for a simple Clock App built using ReactJS. The app displays the current time and allows users to customize the clock format.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+The repository could showcase various features, such as:
 
-### `npm run build`
+> - [ ] Responsive Design
+> - [ ] Onclick Copy Emoji
+> - [ ] IOS Emojis
+> - [ ] Check IOS Emoji Exist In CDN SERVER
+> - [ ] Search Bar
+> - [ ] Pagination Bar
+> - [ ] Title For Emojis
+> - [ ] Emoji API & CDN
+> - [ ] Shake Images (IOS Emoji) On Hover
+> - [ ] Onclick () => Clear Search Input Value
+> - [ ] ToolTop For Hover & Show: "Click To Copy Emoji"
+> - [ ] Loader Component
+> - [ ] OnError IOS Emoji, Show System Emojis
+> - [ ] No Drag For Images
+> - [ ] Router Paes
+> - [ ] WPA
+> - [ ] Toggle Dark OR Light Mode
+> - [ ] Float Icons For Starter Page
+> - [ ] Easy, Medium, Expert, Master, Mode For Game
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Real-Time Clock:** The app displays the current time in a user-friendly format.
 
-### `npm run eject`
+- **Responsive Design:** The app is built with responsiveness in mind, ensuring a seamless experience across various devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **User Interaction:** Handling user interactions for format customization.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Built with ReactJS:** Leveraging the power of ReactJS, this timer component is efficient, maintainable, and easy to integrate into your React projects.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Screenshots
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-## Learn More
+<div>
+  <img width="825" src="Screenshot.png">
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Run Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# basic-clock-reactjs
- ..
- ...
+Clone the project
+
+```bash
+  git clone https://github.com/amirrahemi01/basic-clock-reactjs
+```
+
+Go to the project directory
+
+```bash
+  cd basic-clock-reactjs
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for more details.
+
+## License
+
+
+## Demo
+
+
+
+Check Demo <a href="https://amirrahemi-emoji.vercel.app/" target="_blank">DEMO</a>
