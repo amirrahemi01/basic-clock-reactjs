@@ -1,12 +1,11 @@
 @font-face {
     font-family: digital;
-    src: url(./digital-7.ttf);
+    src: url(../fonts/digital-7.ttf);
 }
 
 .font-clock {
     font-family: digital;
     color: #FF9500;
-    font-size: 5rem;
 }
 
 .clock {

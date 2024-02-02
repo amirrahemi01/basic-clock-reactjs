@@ -43,11 +43,15 @@ const MainClock = (props: Props) => {
     return () => clearInterval(interval);
   }, []);
 
-  let digital = time.toLocaleTimeString().replace("AM","").replace("PM","");
-  let hours_12  = time.toLocaleTimeString().replace(/[0-9]+/g,"").replace(":","").replace(":","");
+  let digital = time.toLocaleTimeString().replace("AM", "").replace("PM", "");
+  let hours_12 = time
+    .toLocaleTimeString()
+    .replace(/[0-9]+/g, "")
+    .replace(":", "")
+    .replace(":", "");
 
   return (
-    <div>
+    <div className="bg-slate-900 text-white h-lvh flex flex-col items-center justify-center">
       <div className="clock">
         <img src={clockImage} alt="clock-image" />
         <div className="hour">
@@ -61,15 +65,16 @@ const MainClock = (props: Props) => {
         </div>
       </div>
 
-      <p> Current Date is = {currDate} </p>
-      <p> Curremt Time is = {currTime} </p>
-      <span className="font-clock num">{digital}</span>
-      <span className="font-clock hours">{hours_12}</span>
       <br />
 
-      <span>
-        <h1>{time.toDateString()}</h1>
-      </span>
+      <div className="font-clock">
+        <span className="num text-6xl">{digital}</span>
+        <span className="hours text-4xl">{hours_12}</span>
+      </div>
+
+      <div>
+        <h1 className="font-clock text-4xl">{time.toDateString()}</h1>
+      </div>
     </div>
   );
 };

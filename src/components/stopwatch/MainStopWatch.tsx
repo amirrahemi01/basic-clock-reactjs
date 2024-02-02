@@ -1,13 +1,16 @@
-import React, { useRef } from 'react'
-import Timer from './Timer';
-import SplitTimer from './SplitTimer';
-import Actions from './Actions';
-import LogTable from './LogTable';
-import { ReduxStoreState } from '../../services/types';
-import { bindActionCreators } from 'redux';
-import { updateTimer, resetTimer } from "../../services/redux/actions/timerActions";
+import React, { useRef } from "react";
+import Timer from "./Timer";
+import SplitTimer from "./SplitTimer";
+import Actions from "./Actions";
+import LogTable from "./LogTable";
+import { ReduxStoreState } from "../../services/types";
+import { bindActionCreators } from "redux";
+import {
+  updateTimer,
+  resetTimer,
+} from "../../services/redux/actions/timerActions";
 import { resetLogs } from "../../services/redux/actions/logAction";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
 type StoreProps = {
   currentTime: number;
@@ -24,7 +27,6 @@ type Props = StoreProps & DispathProps;
 let timer!: ReturnType<typeof setTimeout>;
 
 const MainStopWatch = (props: Props) => {
-
   const timerStartRef = useRef(0);
 
   const startTimer = () => {
@@ -48,20 +50,20 @@ const MainStopWatch = (props: Props) => {
   };
 
   return (
-    <div className="app-container">
-    <div className="stopwatch-box">
-      <Timer />
-      <SplitTimer />
-      <Actions
-        handleStart={startTimer}
-        handleStop={stopTimer}
-        handleReset={resetTheTimer}
-      />
-      <LogTable />
+    <div className="bg-slate-900 text-white h-lvh flex flex-col items-center justify-center">
+      <div className="stopwatch-box">
+        <Timer />
+        <SplitTimer />
+        <Actions
+          handleStart={startTimer}
+          handleStop={stopTimer}
+          handleReset={resetTheTimer}
+        />
+        <LogTable />
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
 const mapStateToProps = ({
   timer: { currentTime },
