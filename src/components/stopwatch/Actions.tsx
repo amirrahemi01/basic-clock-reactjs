@@ -1,8 +1,8 @@
 import React from 'react'
-import { updateTimerState } from '../services/redux/actions/timerActions';
-import { updateSplitLog, updateLog } from '../services/redux/actions/logAction';
-import { EVENTS } from '../services/constants';
-import { ReduxStoreState } from '../services/types';
+import { updateTimerState } from '../../services/redux/actions/timerActions';
+import { updateSplitLog, updateLog } from '../../services/redux/actions/logAction';
+import { EVENTS } from '../../services/constants';
+import { ReduxStoreState } from '../../services/types';
 import { bindActionCreators } from 'redux';
 import { connect } from "react-redux";
 

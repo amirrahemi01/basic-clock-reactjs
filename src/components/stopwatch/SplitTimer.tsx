@@ -1,6 +1,6 @@
 import React from "react";
-import cleanTime from "../services/utils/cleanTime";
-import { ReduxStoreState } from "../services/types";
+import cleanTime from "../../services/utils/cleanTime";
+import { ReduxStoreState } from "../../services/types";
 import { connect } from "react-redux";
 
 type StoreProps = { splitLogs: any };

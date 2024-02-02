@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import cleanTime from "../services/utils/cleanTime";
-import { ReduxStoreState } from "../services/types";
+import cleanTime from "../../services/utils/cleanTime";
+import { ReduxStoreState } from "../../services/types";
 
 
 type StoreProps = {
