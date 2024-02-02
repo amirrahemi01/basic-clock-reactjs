@@ -18,7 +18,7 @@ Welcome to the Clock App repository!
        <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>
        <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
-       <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="typescript" width="40" height="40"/> </a>
+       <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/tailwindcss/tailwindcss-plain.svg" alt="typescript" width="40" height="40"/> </a>
        <a href="https://redux.js.org/" target="_blank" rel="noreferrer"style="text-decoration: none !important;">
        <img src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/redux/redux-original.svg" alt="typescript" width="40" height="40"/> </a>
         </p>
