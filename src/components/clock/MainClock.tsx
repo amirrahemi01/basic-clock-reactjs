@@ -1,80 +1,81 @@
 import React, { useEffect, useState } from "react";
 
 import clockImage from "../../assets/images/clock.png";
+import { FaRegClock } from "react-icons/fa6";
+import { IoTimerOutline } from "react-icons/io5";
+import Clock from "./Clock";
+import DigitalClock from "./DigitalClock";
+import { GoScreenFull } from "react-icons/go";
+import { RxExitFullScreen } from "react-icons/rx";
 
-import "../../assets/styles/clock.css";
+// import "../../assets/styles/clock.css";
 
 type Props = {};
 
 const MainClock = (props: Props) => {
-  useEffect(() => {
-    const deg = 6;
+  const [fullscreen, setFullscreen] = useState(false);
 
-    const hr = document.querySelector("#hr") as HTMLDivElement;
-    const mn = document.querySelector("#mn") as HTMLDivElement;
-    const sc = document.querySelector("#sc") as HTMLDivElement;
-
-    setInterval(() => {
-      let day = new Date();
-
-      let hh = day.getHours() * 30;
-
-      let mm = day.getMinutes() * deg;
-
-      let ss = day.getSeconds() * deg;
-
-      hr.style.transform = `rotateZ(${hh + mm / 12}deg)`;
-      mn.style.transform = `rotateZ(${mm}deg)`;
-      sc.style.transform = `rotateZ(${ss}deg)`;
-    });
-  });
-
-  //   Digital Time
-  const currDate = new Date().toLocaleDateString();
-  const currTime = new Date().toLocaleTimeString();
-
-  const [time, setTime] = useState(new Date());
+  const toggleFullScreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
+    const updateFullScreenState = () => {
+      setFullscreen(Boolean(document.fullscreenElement));
+    };
 
-    return () => clearInterval(interval);
+    updateFullScreenState();
+    document.addEventListener("fullscreenchange", updateFullScreenState);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", updateFullScreenState);
+    };
   }, []);
 
-  let digital = time.toLocaleTimeString().replace("AM", "").replace("PM", "");
-  let hours_12 = time
-    .toLocaleTimeString()
-    .replace(/[0-9]+/g, "")
-    .replace(":", "")
-    .replace(":", "");
+  const [step, setStep] = useState(0);
+  function renderSwitch() {
+    switch (step) {
+      case 0:
+        return (
+          <main
+            className="cursor-pointer text-center"
+            onClick={() => setStep(1)}
+          >
+            <DigitalClock />
+          </main>
+        );
+      case 1:
+        return (
+          <main className="cursor-pointer" onClick={() => setStep(0)}>
+            <Clock />
+          </main>
+        );
+      default:
+        return "";
+    }
+  }
 
   return (
-    <div className="bg-slate-900 text-white h-lvh flex flex-col items-center justify-center">
-      <div className="clock">
-        <img src={clockImage} alt="clock-image" />
-        <div className="hour">
-          <div className="hr" id="hr"></div>
-        </div>
-        <div className="min">
-          <div className="mn" id="mn"></div>
-        </div>
-        <div className="sec">
-          <div className="sc" id="sc"></div>
-        </div>
-      </div>
-
+    <div className="bg-slate-900 text-Slate-100 h-lvh flex flex-col items-center justify-center">
       <br />
 
-      <div className="font-clock">
-        <span className="num text-6xl">{digital}</span>
-        <span className="hours text-4xl">{hours_12}</span>
+      <div className="text-white absolute bottom-0 right-0 m-11 text-4xl">
+        {!fullscreen ? (
+          <button onClick={toggleFullScreen}>
+            <GoScreenFull />
+          </button>
+        ) : (
+          <button onClick={toggleFullScreen}>
+            <RxExitFullScreen />
+          </button>
+        )}
       </div>
 
-      <div>
-        <h1 className="font-clock text-4xl">{time.toDateString()}</h1>
-      </div>
+      {renderSwitch()}
     </div>
   );
 };
