@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../components/navbar/Navbar";
 
 const WorldClock = () => {
   return (
-    <div>WorldClock</div>
-  )
-}
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default WorldClock
+export default WorldClock;
