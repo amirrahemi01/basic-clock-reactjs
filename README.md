@@ -63,11 +63,8 @@ The repository could showcase various features, such as:
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](Screenshot.png)
 
-<div>
-  <img width="825" src="Screenshot.png">
-</div>
 
 ## Run Locally
 
