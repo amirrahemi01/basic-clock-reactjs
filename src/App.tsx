@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import "./index.css";
 
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import StopWatch from "./pages/StopWatch";
 import WorldClock from "./pages/WorldClock";
 import Clock from "./pages/Clock";
@@ -19,11 +18,11 @@ const App = (props: Props) => {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Clock />} />
         <Route path='Stopwatch' element={<StopWatch />} />
         <Route path='Clock' element={<Clock />} />
         <Route path='Worldclock' element={<WorldClock />} />
-        <Route path='PrivacyPolicy' element={<Home />} />
+        <Route path='PrivacyPolicy' element={<Clock />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </>

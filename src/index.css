@@ -7,9 +7,15 @@
     src: url(./assets/fonts/digital-7.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 .font-clock {
     font-family: digital;
     color: #FF9500;
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .clock {
@@ -102,6 +108,8 @@
     z-index: 12;
     border-radius: 6px 6px 0 0;
   }
+
+  
   
 @tailwind base;
 @tailwind components;
