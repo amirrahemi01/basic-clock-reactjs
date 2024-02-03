@@ -7,6 +7,7 @@ import Clock from "./Clock";
 import DigitalClock from "./DigitalClock";
 import { GoScreenFull } from "react-icons/go";
 import { RxExitFullScreen } from "react-icons/rx";
+import Github from "../github/Github";
 
 // import "../../assets/styles/clock.css";
 
@@ -63,7 +64,7 @@ const MainClock = (props: Props) => {
     <div className="bg-slate-900 text-Slate-100 h-lvh flex flex-col items-center justify-center">
       <br />
 
-      <div className="text-white absolute bottom-0 right-0 m-11 text-4xl">
+      <div className="text-white absolute bottom-0 right-0 m-10 text-4xl transition hover:scale-150">
         {!fullscreen ? (
           <button onClick={toggleFullScreen}>
             <GoScreenFull />
@@ -74,6 +75,8 @@ const MainClock = (props: Props) => {
           </button>
         )}
       </div>
+
+      <Github />
 
       {renderSwitch()}
     </div>
