@@ -54,6 +54,7 @@ The repository could showcase various features, such as:
 
 
 
+
 ### Key Features
 
 - **Real-Time Clock:** The app displays the current time in a user-friendly format.
