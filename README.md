@@ -31,6 +31,7 @@ This repository contains the source code for a simple Clock App built using Reac
 The repository could showcase various features, such as:
 
 > - [ ] Responsive Design
+> - [ ] Active class for page
 > - [ ] Onclick Copy Emoji
 > - [ ] IOS Emojis
 > - [ ] Check IOS Emoji Exist In CDN SERVER
