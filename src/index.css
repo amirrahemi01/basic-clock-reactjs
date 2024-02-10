@@ -9,6 +9,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+::selection {
+  color: none;
+  background: none;
+}
+
 .font-clock {
     font-family: digital;
     color: #FF9500;
@@ -16,6 +21,10 @@
 
 .navbar {
   font-family: 'Montserrat', sans-serif;
+}
+
+.custom-cursor {
+  cursor: url('./assets/images/main.png'), auto !important;
 }
 
 .clock {

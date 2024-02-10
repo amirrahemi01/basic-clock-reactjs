@@ -43,7 +43,7 @@ const MainClock = (props: Props) => {
       case 0:
         return (
           <main
-            className="cursor-pointer text-center"
+            className="custom-cursor text-center"
             onClick={() => setStep(1)}
           >
             <DigitalClock />
@@ -51,7 +51,7 @@ const MainClock = (props: Props) => {
         );
       case 1:
         return (
-          <main className="cursor-pointer" onClick={() => setStep(0)}>
+          <main className="custom-cursor" onClick={() => setStep(0)}>
             <Clock />
           </main>
         );
