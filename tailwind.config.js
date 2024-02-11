@@ -6,6 +6,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
+      'black': '#000000',
       'slate': {
         50: '#f8fafc',
         100: '#f1f5f9',
@@ -25,9 +26,11 @@ module.exports = {
         800: '#021500',
       },
       'green': {
+        100: '#58BB71',
         700: '#0B2A13',
       },
       'red': {
+        100: '#E92C55',
         600: '#350E0C',
       },
     },
