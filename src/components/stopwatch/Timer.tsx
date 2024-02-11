@@ -14,7 +14,7 @@ const Timer = (props: Props) => {
 
   return (
     <div>
-      <h1>{cleanTime(currentTime)}</h1>
+      <h1 className="md:text-7xl font-clock">{cleanTime(currentTime)}</h1>
     </div>
   );
 };
