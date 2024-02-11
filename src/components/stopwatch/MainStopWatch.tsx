@@ -50,8 +50,8 @@ const MainStopWatch = (props: Props) => {
   };
 
   return (
-    <div className="bg-slate-900 text-white h-lvh flex flex-col items-center justify-center">
-      <div className="stopwatch-box">
+    <div className="bg-slate-900 text-white h-lvh flex flex-col items-center justify-start w-full pt-40">
+      <div className="text-center">
         <Timer />
         <SplitTimer />
         <Actions
@@ -59,7 +59,9 @@ const MainStopWatch = (props: Props) => {
           handleStop={stopTimer}
           handleReset={resetTheTimer}
         />
-        <LogTable />
+        <main className="log-formatting-main">
+          <LogTable />
+        </main>
       </div>
     </div>
   );
