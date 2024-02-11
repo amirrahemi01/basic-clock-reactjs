@@ -1,0 +1,7 @@
+{
+  // ... other configurations
+  "rules": {
+    // ... other rules
+    "css/no-unknown-at-rule": "off"
+  }
+}
