@@ -9,6 +9,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f1f1f;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
 ::selection {
   color: none;
   background: none;
@@ -17,6 +36,7 @@
 * {
   transition: 0.5s;
 }
+
 
 .font-clock {
   font-family: digital;
@@ -127,6 +147,26 @@
   transform: translate(-100%, 0);
 }
 
+
+/* .log-formatting {
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 130px 500px 100px;
+  margin-bottom: 10px;
+} */
+
+.split-formater {
+  display: none;
+}
+
+/* @media (min-width: 30em) and (max-width: 80em) {
+.log-formatting { 
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 70px 250px 100px;
+  margin-bottom: 5px;
+  }
+} */
 
 
 @tailwind base;
