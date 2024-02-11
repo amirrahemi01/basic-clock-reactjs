@@ -49,7 +49,7 @@ The repository could showcase various features, such as:
 > - [ ] WPA
 > - [ ] Toggle Dark OR Light Mode
 > - [ ] Float Icons For Starter Page
-> - [ ] Easy, Medium, Expert, Master, Mode For Game
+> - [ ] Check sound onclick timer or digital
 
 
 
