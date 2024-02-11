@@ -41,11 +41,11 @@ const Action = (props: Props) => {
   } = props;
 
   return (
-    <div className="flex">
-      <div className="p-1 mx-28">
+    <div className="flex mb-5">
+      <div className="p-1 mx-9 sm:mx-28">
         {timerState === false ? (
           <button
-            className="w-32 h-32 rounded-full outline outline-4 outline-gray-500  border-2 border-gray-800 bg-gray-500 text-white"
+            className="w-16 h-16 sm:w-24 sm:h-24 rounded-full outline outline-4 outline-gray-500  border-2 border-gray-800 bg-gray-500 text-white"
             onClick={() => {
               handleReset();
             }}
@@ -54,7 +54,7 @@ const Action = (props: Props) => {
           </button>
         ) : (
           <button
-            className="w-32 h-32 rounded-full outline outline-4 outline-gray-500  border-2 border-gray-800 bg-gray-500 text-white"
+            className="w-16 h-16 sm:w-24 sm:h-24 rounded-full outline outline-4 outline-gray-500  border-2 border-gray-800 bg-gray-500 text-white"
             onClick={() => {
               updateLog(EVENTS.SPLIT, currentTime);
               updateSplitLog(EVENTS.SPLIT, currentTime);
@@ -65,10 +65,10 @@ const Action = (props: Props) => {
         )}
       </div>
 
-      <div className="p-1 mx-28">
+      <div className="p-1 mx-9 sm:mx-28">
         {timerState === false ? (
           <button
-            className="w-32 h-32 rounded-full outline outline-4 outline-green-700  border-2 border-gray-800 text-white bg-green-700"
+            className="w-16 h-16 sm:w-24 sm:h-24 rounded-full outline outline-4 outline-green-700  border-2 border-gray-800 text-white bg-green-700"
             onClick={() => {
               updateTimerState(true);
               handleStart();
@@ -79,7 +79,7 @@ const Action = (props: Props) => {
           </button>
         ) : (
           <button
-            className="w-32 h-32 rounded-full outline outline-4 outline-red-600  border-2 border-gray-800 text-white bg-red-600"
+            className="w-16 h-16 sm:w-24 sm:h-24 rounded-full outline outline-4 outline-red-600  border-2 border-gray-800 text-white bg-red-600"
             onClick={() => {
               updateTimerState(false);
               handleStop();

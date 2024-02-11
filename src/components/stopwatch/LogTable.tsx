@@ -2,7 +2,6 @@ import { connect } from "react-redux";
 import cleanTime from "../../services/utils/cleanTime";
 import { ReduxStoreState } from "../../services/types";
 
-
 type StoreProps = {
   logs: any;
 };
@@ -15,27 +14,31 @@ const LogTable = (props: Props) => {
   const timerColors = (action: string) => {
     switch (action) {
       case "START":
-        return "#03DAC6";
+        return "text-green-100";
       case "PAUSE":
-        return "#FF7597";
+        return "text-red-100";
       case "SPLIT":
-        return "#F9AB25";
+        return "text-white";
       default:
-        return "#FFF";
+        return "text-white";
     }
   };
 
   return logs.map((item: { action: string; time: number }, i: number) => (
-    <div className="log-formatting" key={i} >
-      <td>Lap{i + 1}</td>
-      <td style={{ color: timerColors(item.action) }}>
-        {cleanTime(item.time)}
-      </td>
-      <td>{item.action}</td>
-    </div>
+    <>
+      <div className="log-formatting gird grid-cols-2 text-1xl sm:text-2xl flex justify-between" key={i}>
+        <td className={ timerColors(item.action) }>Lap {i + 1}</td>
+        <td className={ timerColors(item.action) }>
+          {cleanTime(item.time)}
+        </td>
+        {/* <td>{item.action}</td> */}
+      </div>
+    </>
   ));
 };
 
-const mapStateToProps = ({ log: { logs } }: ReduxStoreState): StoreProps => ({logs})
+const mapStateToProps = ({ log: { logs } }: ReduxStoreState): StoreProps => ({
+  logs,
+});
 
-export default connect<StoreProps, ReduxStoreState>(mapStateToProps)(LogTable)
+export default connect<StoreProps, ReduxStoreState>(mapStateToProps)(LogTable);
