@@ -1,14 +1,17 @@
-import React from 'react'
-import { updateTimerState } from '../../services/redux/actions/timerActions';
-import { updateSplitLog, updateLog } from '../../services/redux/actions/logAction';
-import { EVENTS } from '../../services/constants';
-import { ReduxStoreState } from '../../services/types';
-import { bindActionCreators } from 'redux';
+import React from "react";
+import { updateTimerState } from "../../services/redux/actions/timerActions";
+import {
+  updateSplitLog,
+  updateLog,
+} from "../../services/redux/actions/logAction";
+import { EVENTS } from "../../services/constants";
+import { ReduxStoreState } from "../../services/types";
+import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
 type StoreProps = {
-  timerState: boolean,
-  currentTime: number
+  timerState: boolean;
+  currentTime: number;
 };
 
 type DispathProps = {
@@ -34,56 +37,59 @@ const Action = (props: Props) => {
     updateSplitLog,
     handleStart,
     handleStop,
-    handleReset
+    handleReset,
   } = props;
 
   return (
-    <div className="action-btns">
-      {timerState === false ? (
-        <button
-          className="bg-green-600"
-          onClick={() => {
-            updateTimerState(true);
-            handleStart();
-            updateLog(EVENTS.START, currentTime);
-          }}
-        >
-          START
-        </button>
-      ) : (
-        <button
-          className="bg-red-600"
-          onClick={() => {
-            updateTimerState(false);
-            handleStop();
-            updateLog(EVENTS.PAUSE, currentTime);
-          }}
-        >
-          PAUSE
-        </button>
-      )}
+    <div className="flex">
+      <div className="p-1 mx-28">
+        {timerState === false ? (
+          <button
+            className="w-32 h-32 rounded-full outline outline-4 outline-gray-500  border-2 border-gray-800 bg-gray-500 text-white"
+            onClick={() => {
+              handleReset();
+            }}
+          >
+            RESET
+          </button>
+        ) : (
+          <button
+            className="w-32 h-32 rounded-full outline outline-4 outline-gray-500  border-2 border-gray-800 bg-gray-500 text-white"
+            onClick={() => {
+              updateLog(EVENTS.SPLIT, currentTime);
+              updateSplitLog(EVENTS.SPLIT, currentTime);
+            }}
+          >
+            SPLIT
+          </button>
+        )}
+      </div>
 
-      <button
-        className="action-split" 
-        onClick={() => {
-          updateLog(EVENTS.SPLIT, currentTime);
-          updateSplitLog(EVENTS.SPLIT, currentTime);
-        }}
-        disabled = {timerState === false}
-      >
-        SPLIT
-      </button>
-
-      <button
-        className="action-reset" 
-        onClick={() => {
-          handleReset();
-        }}
-        disabled = {timerState === true}
-      >
-        RESET
-      </button>
-
+      <div className="p-1 mx-28">
+        {timerState === false ? (
+          <button
+            className="w-32 h-32 rounded-full outline outline-4 outline-green-700  border-2 border-gray-800 text-white bg-green-700"
+            onClick={() => {
+              updateTimerState(true);
+              handleStart();
+              updateLog(EVENTS.START, currentTime);
+            }}
+          >
+            START
+          </button>
+        ) : (
+          <button
+            className="w-32 h-32 rounded-full outline outline-4 outline-red-600  border-2 border-gray-800 text-white bg-red-600"
+            onClick={() => {
+              updateTimerState(false);
+              handleStop();
+              updateLog(EVENTS.PAUSE, currentTime);
+            }}
+          >
+            PAUSE
+          </button>
+        )}
+      </div>
     </div>
   );
 };
@@ -92,7 +98,7 @@ const mapStateToProps = ({
   timer: { timerState, currentTime },
 }: ReduxStoreState): StoreProps => ({
   timerState,
-  currentTime
+  currentTime,
 });
 
 const mapDispatchToProps = (dispatch: any): DispathProps => {
@@ -100,7 +106,7 @@ const mapDispatchToProps = (dispatch: any): DispathProps => {
     {
       updateTimerState,
       updateLog,
-      updateSplitLog
+      updateSplitLog,
     },
     dispatch
   );
