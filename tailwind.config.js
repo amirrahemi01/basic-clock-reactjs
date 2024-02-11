@@ -2,7 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{html,js,tsx}"],
   theme: {
-
     fontSize: {
       sm: '0.8rem',
       base: '1rem',
@@ -17,7 +16,7 @@ module.exports = {
       '9xl': '8rem',
       '10xl': '9.5rem',
       '11xl': '12rem',
-    }
+    },
   },
   plugins: [],
 }

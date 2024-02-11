@@ -23,12 +23,12 @@ const DigitalClock = (props: Props) => {
   return (
     <>
       <div className="font-clock text-slate-300">
-        <span className="num text-11xl">{digital}</span>
-        <span className="hours text-7xl">{hours_12}</span>
+        <span className="num text-6xl sm:text-9xl lg:text-11xl">{digital}</span>
+        <span className="hours text-2xl sm:text-5xl lg:text-7xl">{hours_12}</span>
       </div>
 
       <>
-        <h1 className="font-clock text-5xl text-slate-300">{time.toDateString()}</h1>
+        <h1 className="font-clock text-1xl lg:text-5xl sm:text-3xl text-slate-300">{time.toDateString()}</h1>
       </>
     </>
   );

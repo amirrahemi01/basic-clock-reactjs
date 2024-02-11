@@ -17,8 +17,10 @@ const MainClock = (props: Props) => {
   const [fullscreen, setFullscreen] = useState(false);
 
   const toggleFullScreen = () => {
+    const docEl = document.documentElement;
+
     if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
+      docEl.requestFullscreen();
     } else {
       document.exitFullscreen();
     }
@@ -64,7 +66,10 @@ const MainClock = (props: Props) => {
     <div className="bg-slate-900 text-Slate-100 h-lvh flex flex-col items-center justify-center">
       <br />
 
-      <div className="text-white absolute bottom-0 right-0 m-10 text-4xl transition hover:scale-150">
+      {/^((?!chrome|android).)*safari/i.test(navigator.userAgent) ? (
+        ""
+      ) : (
+        <div className="text-white absolute bottom-0 right-0 m-5 text-2xl lg:text-4xl transition hover:scale-150 sm:m-10">
         {!fullscreen ? (
           <button onClick={toggleFullScreen}>
             <GoScreenFull />
@@ -75,6 +80,9 @@ const MainClock = (props: Props) => {
           </button>
         )}
       </div>
+      )}
+
+
 
       <Github />
 

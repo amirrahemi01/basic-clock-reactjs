@@ -14,6 +14,10 @@
   background: none;
 }
 
+* {
+  transition: 0.5s;
+}
+
 .font-clock {
     font-family: digital;
     color: #FF9500;
@@ -28,8 +32,8 @@
 }
 
 .clock {
-    width: 368px;
-    height: 368px;
+    width: 300px;
+    height: 300px;
   
     display: flex;
     justify-content: center;

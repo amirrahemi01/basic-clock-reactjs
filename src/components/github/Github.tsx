@@ -8,7 +8,7 @@ const Github = (props: Props) => {
     <a
     target="_blank"
       href="https://github.com/amirrahemi01/basic-clock-reactjs"
-      className="text-white text-4xl absolute top-0 m-12 transition hover:scale-150"
+      className="text-white text-2xl md:text-4xl absolute top-0 m-12 transition hover:scale-150"
     >
       <FaGithub />
     </a>
