@@ -24,7 +24,6 @@ Welcome to the Clock App repository!
         </p>
 
 ## Overview
-
 This repository contains the source code for a simple Clock App built using ReactJS. The app displays the current time and allows users to customize the clock format.
 
 ## Features
@@ -50,10 +49,6 @@ The repository could showcase various features, such as:
 > - [ ] Toggle Dark OR Light Mode
 > - [ ] Float Icons For Starter Page
 > - [ ] Check sound onclick timer or digital
-
-
-
-.
 
 
 ### Key Features
@@ -101,11 +96,13 @@ Start the server
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for more details.
 
-## License
-
 
 ## Demo
 
-
-
 Check Demo <a href="https://amirrahemi-emoji.vercel.app/" target="_blank">DEMO</a>
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/amirrahemi01/basic-clock-reactjs.svg?variant=adaptive)](https://starchart.cc/amirrahemi01/basic-clock-reactjs)
+
