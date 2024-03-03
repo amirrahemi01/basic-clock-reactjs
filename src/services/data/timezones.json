@@ -1143,13 +1143,13 @@
         "ISO": "IR",
         "Country": "Iran",
         "Timezone": "Asia/Tehran",
-        "Offset": 270
+        "Offset": 210
     },
     {
         "ISO": "IR",
         "Country": "Iran",
         "Timezone": "Asia/Rasht",
-        "Offset": 270
+        "Offset": 210
     },
     {
         "ISO": "IQ",

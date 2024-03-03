@@ -105,5 +105,3 @@ Check Demo <a href="https://amirrahemi-emoji.vercel.app/" target="_blank">DEMO</
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/amirrahemi01/basic-clock-reactjs.svg?variant=adaptive)](https://starchart.cc/amirrahemi01/basic-clock-reactjs)
-
-test

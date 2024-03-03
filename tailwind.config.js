@@ -19,6 +19,8 @@ module.exports = {
         800: '#1e293b',
         900: '#0f172a',
         950: '#020617',
+        960: '#090909',
+        965: '#111111',
       },
       'gray': {
         500: '#6b7280',
@@ -31,6 +33,8 @@ module.exports = {
       },
       'red': {
         100: '#E92C55',
+        200: '#E93131',
+        250: '#ED6464',
         600: '#350E0C',
       },
     },
@@ -48,6 +52,12 @@ module.exports = {
       '9xl': '8rem',
       '10xl': '9.5rem',
       '11xl': '12rem',
+    },
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat"],
+        // Add more custom font families as needed
+      },
     },
   },
   plugins: [],
