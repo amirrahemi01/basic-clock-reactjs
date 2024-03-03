@@ -1,5 +1,3 @@
-
-
 # BASIC CLOCK APP
 
 ![last commit](https://img.shields.io/github/last-commit/amirrahemi01/basic-clock-reactjs) ![license](https://img.shields.io/github/license/amirrahemi01/basic-clock-reactjs) ![Deploy](https://img.shields.io/github/deployments/amirrahemi01/basic-clock-reactjs/github-pages) 

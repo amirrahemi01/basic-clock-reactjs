@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import WorldClockCard from "./WorldClockCard";
 import Timezones from "../../services/data/timezones.json";
 
@@ -76,7 +77,9 @@ class WorldClockMain extends Component<{}, State> {
     return (
       <>
         <div className="bg-black text-white min-h-svh flex flex-col items-center justify-start w-full pt-10 sm:pt-40">
-          <h2 className="text-2xl sm:text-4xl my-8 uppercase font-montserrat">Choose a timezone</h2>
+          <h2 className="text-2xl sm:text-4xl my-8 uppercase font-montserrat">
+            Choose a timezone
+          </h2>
           <select
             className="bg-white text-black p-5 rounded-2xl cursor-pointer font-mono lg:w-1/2 sm:w-3/4 w-11/12"
             id="ddlProducts"
@@ -85,7 +88,10 @@ class WorldClockMain extends Component<{}, State> {
           >
             {optionItems}
           </select>
-          <button onClick={this.addTimeZone} className="my-8 bg-white text-black py-4 px-24 rounded-2xl font-mono lg:w-1/2 sm:w-3/4 w-11/12 hover:bg-black hover:text-white">
+          <button
+            onClick={this.addTimeZone}
+            className="my-8 bg-white text-black py-4 px-24 rounded-2xl font-mono lg:w-1/2 sm:w-3/4 w-11/12 hover:bg-black hover:text-white"
+          >
             Add Clock
           </button>
           {clocks}

@@ -56,7 +56,6 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat"],
-        // Add more custom font families as needed
       },
     },
   },

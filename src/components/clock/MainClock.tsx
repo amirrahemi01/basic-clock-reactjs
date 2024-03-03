@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import clockImage from "../../assets/images/clock.png";
-import { FaRegClock } from "react-icons/fa6";
-import { IoTimerOutline } from "react-icons/io5";
 import Clock from "./Clock";
 import DigitalClock from "./DigitalClock";
-import { GoScreenFull } from "react-icons/go";
-import { RxExitFullScreen } from "react-icons/rx";
 import Github from "../github/Github";
 
-// import "../../assets/styles/clock.css";
+import { GoScreenFull } from "react-icons/go";
+import { RxExitFullScreen } from "react-icons/rx";
 
 type Props = {};
 
@@ -70,19 +66,17 @@ const MainClock = (props: Props) => {
         ""
       ) : (
         <div className="text-white absolute bottom-0 right-0 m-5 text-2xl lg:text-4xl transition hover:scale-150 sm:m-10">
-        {!fullscreen ? (
-          <button onClick={toggleFullScreen}>
-            <GoScreenFull />
-          </button>
-        ) : (
-          <button onClick={toggleFullScreen}>
-            <RxExitFullScreen />
-          </button>
-        )}
-      </div>
+          {!fullscreen ? (
+            <button onClick={toggleFullScreen}>
+              <GoScreenFull />
+            </button>
+          ) : (
+            <button onClick={toggleFullScreen}>
+              <RxExitFullScreen />
+            </button>
+          )}
+        </div>
       )}
-
-
 
       <Github />
 

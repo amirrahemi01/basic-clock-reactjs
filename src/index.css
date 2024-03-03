@@ -147,26 +147,9 @@
   transform: translate(-100%, 0);
 }
 
-
-/* .log-formatting {
-  font-size: 25px;
-  display: grid;
-  grid-template-columns: 130px 500px 100px;
-  margin-bottom: 10px;
-} */
-
 .split-formater {
   display: none;
 }
-
-/* @media (min-width: 30em) and (max-width: 80em) {
-.log-formatting { 
-  font-size: 25px;
-  display: grid;
-  grid-template-columns: 70px 250px 100px;
-  margin-bottom: 5px;
-  }
-} */
 
 .card .clock {
   margin: 0 auto;
@@ -244,7 +227,3 @@
 #aaa {
   border-radius: 1rem;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

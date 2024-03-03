@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import Clock from "react-clock";
+
 import { TiDelete } from "react-icons/ti";
 
 type Props = {

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { updateTimerState } from "../../services/redux/actions/timerActions";
 import {
   updateSplitLog,
