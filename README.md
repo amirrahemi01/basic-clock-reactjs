@@ -27,7 +27,7 @@ This repository contains the source code for a simple Clock App built using Reac
 ## Features
 The repository could showcase various features, such as:
 
-> - [ٓٓX] STOPWATCH
+> - [X] STOPWATCH
 > - [X] CLOCK
 > - [X] WORLD CLOCK
 
