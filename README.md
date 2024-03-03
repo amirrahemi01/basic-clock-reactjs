@@ -29,26 +29,9 @@ This repository contains the source code for a simple Clock App built using Reac
 ## Features
 The repository could showcase various features, such as:
 
-> - [ ] Responsive Design
-> - [ ] Active class for page
-> - [ ] Onclick Copy Emoji
-> - [ ] IOS Emojis
-> - [ ] Check IOS Emoji Exist In CDN SERVER
-> - [ ] Search Bar
-> - [ ] Pagination Bar
-> - [ ] Title For Emojis
-> - [ ] Emoji API & CDN
-> - [ ] Shake Images (IOS Emoji) On Hover
-> - [ ] Onclick () => Clear Search Input Value
-> - [ ] ToolTop For Hover & Show: "Click To Copy Emoji"
-> - [ ] Loader Component
-> - [ ] OnError IOS Emoji, Show System Emojis
-> - [ ] No Drag For Images
-> - [ ] Router Paes
-> - [ ] WPA
-> - [ ] Toggle Dark OR Light Mode
-> - [ ] Float Icons For Starter Page
-> - [ ] Check sound onclick timer or digital
+> - [ٓٓX] STOPWATCH
+> - [X] CLOCK
+> - [X] WORLD CLOCK
 
 
 ### Key Features
